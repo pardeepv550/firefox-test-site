@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>asides</title>
+    <script type="text/javascript">
+    var today= new Date();
+    var hourNow = today.getHours();
+    var greeting;if (hourNow > 18)
+ { greeting= 'Good evening!';
+  else if (hourNow > 12) { greeting = ' Good afternoon!';
+   else if (hourNow > 0) { greeting = 'Good morni ng!';
+    else { greeting = 'Welcome! ' ;
+document .write( ' <h3>' +greeting + ' </ h3>');
+
+    </script>
+    <style type="text/css">
+
+    header, section, footer, aside, nav, article, figure, figcaption {
+      display: block;}
+    body{
+      /* background-image:url("D:/Old/Desktop/CSS Practice/HTML AND CSS NEW/New folder/html-and-css-book-code-0915/chapter-17/images/dark-wood.jpg");
+    } */
+    background-image: -webkit-linear-gradient( #0f0, #000);
+  }
+  body:before{
+    top:20px;
+  }
+  body:after{
+    bottom:20px;
+  }
+      div.wrapper{
+        background-image: -webkit-linear-gradient( #f04, #00f);
+        background-position: center;
+        width:940px;
+        margin:20px auto 20px auto;
+      }
+      nav>ul{
+        padding:2.6px 0px 2.6px 29px ;
+        margin-top:-30px;
+        font-size: 1.15em;
+        background-color: #acacac;
+        font-family: cursive;
+
+      }
+
+      li.nav{
+        padding-right: 30px;
+        text-transform: lowercase;
+        display: inline;
+        list-style-type: none;
+
+      }
+      li.nav>a{
+        color:white;
+        text-decoration: none;
+      }
+      li.nav>a:hover{
+        color:black;
+        padding:-1px 0px -2px 0px;
+      }
+    #navhome{
+      color:black;
+    }
+    .leftsection{
+      width:700px;
+      float:left;
+
+    }
+      article[class="one"],article[class="two"]{
+      padding:7px;
+
+      }
+      figure[class="images"]{
+        border:1px solid lightgrey;
+        padding:10px;
+        margin-bottom:10px;
+        float:left;
+        clear:both;
+        height:220px;
+
+      }
+      figure[class="images"]>figcaption{
+        padding-top:7px;
+        color:#777;
+      }
+
+      hgroup>h2{
+
+        font-size:1.5em;
+        font-family: Georgia;
+        font-weight:lighter;
+        color:#ddd;
+      }
+      hgroup>h3{
+        color:#f35;
+        font-weight: lighter;
+      }
+      hgroup+p{
+        color:#bbb;
+      }
+      article[class="one"]{
+        margin-bottom:90px;
+
+      }
+      article[class="two"]{
+        margin-bottom:120px;
+      }
+      aside.aside{
+        width:240px;
+        float: left;
+      }
+      aside>section{
+        margin-left: 30px;
+      }
+      aside>section[class="section1"]{
+        margin-bottom: 180px;
+
+      }
+      aside>section>h2{
+         color:#bbb;
+         font-family:Georgia;
+         font-weight: lighter;
+         font-size:sans-serif;
+      }
+        aside>section>p{
+          font-size:1.1em;
+          font-family:cursive;
+          color:#0a7;
+        }
+          aside>section>a{
+            font-size:1.05em;
+            font-family:verdana;
+            color:#00a;
+            padding-bottom:5px;
+        }
+      footer{
+        float:left;
+        clear: both;
+        background-color:#aaa;
+        width:100%;
+        padding:10px 20px;
+        color:#fff;
+        font-size:87%;
+      }
+      footer>span{
+        font-size:80%;
+      }
+       <!--[if lt IE 9]>  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  <![endif]-->
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+
+     <header>
+      <h1><img src="D:/Old/Desktop/CSS Practice/HTML AND CSS NEW/New folder/html-and-css-book-code-0915/chapter-17/images/header.jpg"></h1>
+      <nav>
+        <ul>
+          <li class="nav"><a id="navhome" href="" class="current">Home</a></li>
+          <li class="nav"><a href="">Classes</a></li>
+          <li class="nav"><a href="">catering</li>
+          <li class="nav"><a href="">About</a></li>
+          <li class="nav"><a href="">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+   <section class="leftsection">
+    <article class="one">
+      <figure class="images">
+        <img src="D:/Old/Desktop/CSS Practice/HTML AND CSS NEW/New folder/html-and-css-book-code-0915/chapter-17/images/bok-choi.jpg" alt="">
+        <figcaption>Bok-Choi</figcaption>
+      </figure>
+      <hgroup>
+        <h2>Japanese Vegetarian</h2>
+        <h3>Five week course in London</h3>
+      </hgroup>
+      <p>A five week introduction to traditional Japanese vegetarian meals, teaching you a selection of rice and noodle dishes.</p>
+    </article>
+
+    <article class="two">
+      <figure class="images">
+        <img src="D:/Old/Desktop/CSS Practice/HTML AND CSS NEW/New folder/html-and-css-book-code-0915/chapter-17/images/teriyaki.jpg" alt="">
+        <figcaption>Teriyaki</figcaption>
+      </figure>
+      <hgroup>
+        <h2>Sauces Masterclass</h2>
+        <h3>One day workshop</h3>
+      </hgroup>
+      <p>An intensive one-day course looking at how to create the most delicious sauces for use in a range of Japanese cookery.</p>
+  </article>
+</section>
+    <aside class="aside">
+      <section class="section1">
+        <h2>Popular Recipies</h2>
+        <a href="">Yakitori (grilled chicken)</a>
+        <a href="">Tsukune (minced chicken patties)</a>
+        <a href="">Okonomiyaki (savory pancakes)</a>
+        <a href="">Mizutaki (chicken stew)</a>
+      </section>
+      <section class="section2">
+        <h2>Contact</h2>
+        <p>
+          Yoko's Kitchen,<br>
+          27 Redchurch Street,<br>
+          Shoreditch,<br>
+          London E2 7DP
+        </p>
+      </section>
+    </aside>
+    <!-- AddToAny BEGIN -->
+    <div>
+    <a href="https://www.addtoany.com/share#url=file%3A%2F%2F%2FD%3A%2FOld%2FDesktop%2FCSS%2520Practice%2FHTML%2520AND%2520CSS%2520NEW%2Fchapter-17%2Fasides.html&amp;title=" target="_blank"><img src="https://static.addtoany.com/buttons/a2a.svg" width="32" height="32" style="background-color:royalblue"></a>
+    <a href="https://www.addtoany.com/add_to/facebook?linkurl=file%3A%2F%2F%2FD%3A%2FOld%2FDesktop%2FCSS%2520Practice%2FHTML%2520AND%2520CSS%2520NEW%2Fchapter-17%2Fasides.html&amp;linkname=" target="_blank"><img src="https://static.addtoany.com/buttons/facebook.svg" width="32" height="32" style="background-color:royalblue"></a>
+    <a href="https://www.addtoany.com/add_to/twitter?linkurl=file%3A%2F%2F%2FD%3A%2FOld%2FDesktop%2FCSS%2520Practice%2FHTML%2520AND%2520CSS%2520NEW%2Fchapter-17%2Fasides.html&amp;linkname=" target="_blank"><img src="https://static.addtoany.com/buttons/twitter.svg" width="32" height="32" style="background-color:royalblue"></a>
+    <a href="https://www.addtoany.com/add_to/google_plus?linkurl=file%3A%2F%2F%2FD%3A%2FOld%2FDesktop%2FCSS%2520Practice%2FHTML%2520AND%2520CSS%2520NEW%2Fchapter-17%2Fasides.html&amp;linkname=" target="_blank"><img src="https://static.addtoany.com/buttons/google_plus.svg" width="32" height="32" style="background-color:royalblue"></a>
+    </div>
+    <!-- AddToAny END -->
+    <footer>&copy;<span > 2018</span> Yoko's Kitchen</footer>
+  </div>
+
+
+  </body>
+</html>
